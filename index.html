@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Copy to clipboard</title>
+        <!-- <link rel="stylesheet" href="http://localhost:100/fontawesome6/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="top">
+                <h4> Hexadecimal value </h4>
+                <div class="hex">
+                    <span class="value">
+                    </span>
+                    <button class="copy" data-copy="hex">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="input">
+                <label for="">R</label>
+                <input type="range" class="range" data-color-range value="255" min="0" max="255">
+            </div>
+            <div class="input">
+                <label for="">G</label>
+                <input type="range" class="range" data-color-range value="255" min="0" max="255">
+            </div>
+            <div class="input">
+                <label for="">B</label>
+                <input type="range" class="range" data-color-range value="255" min="0" max="255">
+            </div>
+            <div class="controls">
+                <p class="color"></p>
+                <button class="btn" data-copy="rgb">
+                    Copy RGB Code
+                </button>
+            </div>
+        </div>
+
+        <div class="toast">
+            <p>
+                Copied !!!
+            </p>
+        </div>
+
+        <!-- <script src="http://localhost:100/fontawesome6/js/all.min.js"></script> -->
+        <script src="./script.js"></script>
+    </body>
+
+</html>
